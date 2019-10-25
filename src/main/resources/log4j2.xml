@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TRACE < DEBUG < INFO < WARN < ERROR < FATAL -->
+<Configuration status="ERROR">
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[crawler]%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!-- Apache Loggers -->
+        <logger name="org.apache" level="ERROR"/>
+        <logger name="org.apache.tomcat" level="ERROR"/>
+        <logger name="java.sql" level="ERROR"/>
+
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>  
