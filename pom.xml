@@ -10,7 +10,7 @@
 
 
     <properties>
-        <jsoup.version>1.12.1</jsoup.version>
+        <jsoup.version>1.14.2</jsoup.version>
         <hutool.version>4.6.1</hutool.version>
         <log4j.version>2.12.0</log4j.version>
     </properties>
